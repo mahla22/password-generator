@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form >
+        <h1>password generator:</h1>
+        <label> input the length of the password:</label>
+        <input type="number" min="1" id="passLength"><br>
+        <label>do you want to allow lower case characters?</label>
+        <input type="radio" id="lowerAllowed" name="lc"> Yes
+        <input type="radio" id="lowerNotAllowed" name="lc"> No
+        <br>
+        <label>do you want to allow upper case characters?</label>
+        <input type="radio" id="upperAllowed" name="uc"> Yes
+        <input type="radio" id="upperNotAllowed" name="uc"> No
+        <br>
+        <label>do you want to allow numbers in your password?</label>
+        <input type="radio" id="numAllowed" name="numbers"> Yes
+        <input type="radio" id="numNotAllowed" name="numbers"> No
+        <br>
+        <label>do you want to allow symbols in your password?</label>
+        <input type="radio" id="symAllowed" name="symbol"> Yes
+        <input type="radio" id="symNotAllowed" name="symbol"> No
+        <br>
+        <button id="submitBtn">submit</button>
+        <div id="passwordDiv"></div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
