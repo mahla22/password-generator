@@ -6,42 +6,53 @@ body{
 form {
     padding: 20px;
     width: 550px;
-    height: 400px;
-    background-color: rgb(189, 199, 243);
+    height: 450px;
+    background-color: rgb(118, 132, 199);
     position: relative;
     transform: translate(60%,20%);
     box-shadow: 10px 15px 10px rgb(124, 124, 124);
     border-radius: 15px;
+    
 }
 h1 {
     text-align: center;
 }
-label {
+p {
     text-align: left;
-    font-size: 1.2rem;
-    margin: 10px 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 8px 5px;
 }
 #passLength {
-    font-size: 1rem;
+    position: absolute;
+    top: 325px;
+    left: 310px;
+    font-size: 1.3rem;
     width: 120px;
-    border: 3px solid magenta;
+    border: 2px solid rgb(255, 0, 255);
     border-radius: 12px;
 }
 button{
-    margin: 20px 470px;
     font-size: 20px;
+    position: absolute;
+    top: 325px;
+    left: 450px;
     padding: 5px;
-    background-color: magenta;
+    background-color: rgb(255, 0, 255);
     color: white;
     border: none;
     border-radius: 12px;
     cursor: pointer;
 }
 button:hover {
-    background-color: rgba(255, 0, 255, 0.9);
+    background-color: rgba(255, 0, 255, 0.8);
 }
 button:active{
     background-color: rgba(255, 0, 255, 0.733);
     transform: scale(1.1);
 }
-
+#result {
+    display: block;
+    color: #f5fefd;
+    font-weight: 500;
+}

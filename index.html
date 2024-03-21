@@ -8,27 +8,29 @@
 </head>
 <body>
     <form >
-        <h1>password generator:</h1>
-        <label> input the length of the password:</label>
-        <input type="number" min="1" id="passLength"><br>
-        <label>do you want to allow lower case characters?</label>
-        <input type="radio" id="lowerAllowed" name="lc"> Yes
-        <input type="radio" id="lowerNotAllowed" name="lc"> No
+        <h1>password generator</h1>
+        
+        <p>do you want to allow lower case characters?</p>
+        <input type ="checkbox" id="lowerAllowed" name="lc"> Yes
+
         <br>
-        <label>do you want to allow upper case characters?</label>
-        <input type="radio" id="upperAllowed" name="uc"> Yes
-        <input type="radio" id="upperNotAllowed" name="uc"> No
+        <p>do you want to allow upper case characters?</p>
+        <input type="checkbox" id="upperAllowed" name="uc"> Yes
+    
         <br>
-        <label>do you want to allow numbers in your password?</label>
-        <input type="radio" id="numAllowed" name="numbers"> Yes
-        <input type="radio" id="numNotAllowed" name="numbers"> No
+        <p>do you want to allow numbers in your password?</p>
+        <input type="checkbox" id="numAllowed" name="numbers"> Yes
+  
         <br>
-        <label>do you want to allow symbols in your password?</label>
-        <input type="radio" id="symAllowed" name="symbol"> Yes
-        <input type="radio" id="symNotAllowed" name="symbol"> No
+        <p>do you want to allow symbols in your password?</p>
+        <input type="checkbox" id="symAllowed" name="symbol"> Yes
+
         <br>
-        <button id="submitBtn">submit</button>
-        <div id="passwordDiv"></div>
+        <p> input the length of the password:</p>
+        <input type="number" min="4" id="passLength"><br>
+        
+        <button id="submitBtn">generate</button>
+        <h2 id="result"></h2>
     </form>
     <script src="script.js"></script>
 </body>
